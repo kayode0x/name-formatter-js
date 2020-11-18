@@ -27,6 +27,7 @@ function nameFormatter() {
     else {
         alert("enter alphabets only") //alerts the user to input alphabets only for the name
     }
+    
 }
 
 var yourName = prompt("What is your name? ") //asks the user for the name and stores it
