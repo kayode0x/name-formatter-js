@@ -3,7 +3,7 @@ this program gets the name of the user regardless of the case and then sets it s
 the first letter of the name is in upper case and the rest letters of the name are in
 lower case.
 
-@kayode_io
+@kayode0x
 */
 
 
@@ -26,12 +26,15 @@ function nameFormatter() {
     }
     else {
         alert("enter alphabets only") //alerts the user to input alphabets only for the name
-    }
-    
+    };
+
+    const isEmpty = str => !str.trim().length // function to check if empty spaces are entered
+
+    if (isEmpty(name)) {
+      alert("Enter a valid name, spaces are invalid characters");
+    };
+
 }
 
 var yourName = prompt("What is your name? ") //asks the user for the name and stores it
 nameFormatter(yourName);
-
-
-
